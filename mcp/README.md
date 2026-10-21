@@ -6,7 +6,7 @@ Technical talk with 28 spoken slides, a discussion slide and 15 reference slides
 
 - `content.json`: all 44 slides, speaker notes and primary-source URLs. Content matches the private Spaces presentation at saved sequence 15, including expanded explanations of the 2025–2026 changes.
 - `build.mjs`: editable presentation authoring code. Includes six native diagrams for the VS Code host, Copilot tool calls, separate authorization relationships, provider OAuth, token exchange and service authority.
-- `mcp-servers.pptx`: generated editable PowerPoint. It contains 44 slides and 44 notes parts. This is a rebuild, not a byte-identical export of the Spaces document. Some generic list/table layouts differ. The Spaces deck was visually checked; this rebuilt PPTX has structural checks only and should be previewed before presenting.
+- `mcp-servers.pptx`: generated editable PowerPoint. It contains 44 slides and 44 notes parts. This is a rebuild, not a byte-identical export of the Spaces document. Some generic list/table layouts differ. The Spaces deck was visually checked. The actual rebuilt PPTX passed ZIP and slide/notes-count checks, then was converted through LibreOffice Impress to PDF. Exported slides 3, 5, 16, 19, 23, 34 and 43 were visually inspected: diagrams, dense tables and the JSON example were readable without clipping. This is sampled verification of 7 of 44 exported slides, not a full Microsoft PowerPoint check. Preview the whole deck before presenting.
 
 ## Build
 

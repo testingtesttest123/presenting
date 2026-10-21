@@ -18,7 +18,7 @@ node check.mjs
 node export.mjs pain-axis-v2.pptx
 ```
 
-The export command refuses to overwrite an existing file. Render and inspect a local export before distribution. The included `pain-axis-v2.pptx` was rebuilt locally. ZIP integrity passed, and it contains nine slide XML files and nine speaker-note XML files. This local PowerPoint export has structural verification only. Its rendered appearance has not been checked; the separate Spaces original was visually checked.
+The export command refuses to overwrite an existing file. Render and inspect a local export before distribution. The included `pain-axis-v2.pptx` was rebuilt locally. ZIP integrity passed, and it contains nine slide XML files and nine speaker-note XML files. This local PowerPoint export passed structural checks and a sampled visual check of slides 3 and 6, described below. The separate Spaces original was visually checked.
 
 `buildPainDeck(presentation, data)` also supports a new Spaces presentation with one blank slide. Invoke it in an Artifact Tool callback with the parsed `content.json`. Do not run it on an existing populated presentation.
 
@@ -37,3 +37,7 @@ Primary sources and section links are included in each slide's notes. The source
 [Open the original ChatGPT Space](https://chatgpt.com/space/page_622a17776f988191aeaada8294a5523d). This private link retains its existing access controls.
 
 `speaker-notes.md` is a readable transcript of all notes; `slides.md` contains slide text and table values.
+
+## Export visual check
+
+The exported PPTX was reimported into Artifact Tool. Slides 3 (activation steering) and 6 (behavioral-results table) were rendered and visually inspected at 1280×720: text, equation glyphs and table values were intact with no clipping or overlap. This checks 2 of 9 exported slides, not rendering in Microsoft PowerPoint or LibreOffice. Preview the full deck before presenting.
